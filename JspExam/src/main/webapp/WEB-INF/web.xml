@@ -1,0 +1,37 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <filter>
+  	<filter-name>CustomerFilter</filter-name>
+  	<display-name>CustomerFilter</display-name>
+  	<description></description>
+  	<filter-class>filter.CustomerFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>CustomerFilter</filter-name>
+  	<url-pattern>/CustomerFilter</url-pattern>
+  </filter-mapping>
+  <servlet>
+  	<servlet-name>CustmomerServlet</servlet-name>
+  	<display-name>CustmomerServlet</display-name>
+  	<description></description>
+  	<servlet-class>servlet.CustmomerServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>FilmServlet</servlet-name>
+  	<display-name>FilmServlet</display-name>
+  	<description></description>
+  	<servlet-class>servlet.FilmServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>CustmomerServlet</servlet-name>
+  	<url-pattern>/CustmomerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>FilmServlet</servlet-name>
+  	<url-pattern>/FilmServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
