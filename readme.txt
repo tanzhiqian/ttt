@@ -1,9 +1,10 @@
-1   进入  D:\mavencode\JspExam  
+1   进入  D:\mavencode\WebExam  
      
      运行插件  mvn jetty:run
      
-     pom.xmi文件在D:\mavencode\JspExam\target\pom.xml  
+      
        
-     JDBC数据库连接在D:\mavencode\JspExam\Java Resources\src\main\java\util\Dbutil.java
+     JDBC数据库连接在D:\mavencode\WebExam\Java Resources\src\main\java\com.hand.utils
+     我的数据库账号信息D:\mavencode\WebExam\Java Resources\jdbc.properties
 
 
