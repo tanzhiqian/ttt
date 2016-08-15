@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hand.mapper.AddressMapper">
+
+	<select id="getById" parameterType="int" resultType="com.hand.dto.Address">
+		select *
+		from address where address_id=#{id}
+	</select>
+	<!-- <resultMap type="oneToMany.Classes" id="getClassMap"> <id property="id" 
+		column="c_id" /> <result property="name" column="c_name" /> <association 
+		property="teacher" javaType="oneToMany.Teacher"> <id property="id" column="t_id" 
+		/> <result property="name" column="t_name" /> </association> <collection 
+		property="list" ofType="oneToMany.Student">查询出所有的学生，按oneToMany.Student类型 
+		<id property="id" column="s_id" />ofType：指定集合中元素对象的类型 <result property="name" 
+		column="s_name" /> </collection> </resultMap> -->
+
+</mapper>
